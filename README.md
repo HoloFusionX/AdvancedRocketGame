@@ -21,10 +21,7 @@ Rocket Controller is a Unity script that enables you to control a rocket in a 2D
 - Score tracking and achievement pop-up.
 - Projectile firing with adjustable fire rate.
 - Health regeneration over time.
-
-## Screenshots
-
-![Gameplay Screenshot](/screenshots/gameplay.png)
+- 
 
 ## Requirements
 
