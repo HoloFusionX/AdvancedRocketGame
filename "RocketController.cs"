@@ -1,3 +1,4 @@
+```csharp
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,6 +34,8 @@ public class RocketController : MonoBehaviour
     private bool isNight = false;
 
     private bool canFire = true;
+    private int playerHealth = 100;
+    private int maxHealth = 100;
 
     void Start()
     {
@@ -113,10 +116,10 @@ public class RocketController : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(5f);
-            if (playerHealth < 100)
+            if (playerHealth < maxHealth)
             {
                 playerHealth += 10;
-                playerHealth = Mathf.Clamp(playerHealth, 0, 100);
+                playerHealth = Mathf.Clamp(playerHealth, 0, maxHealth);
             }
         }
     }
@@ -128,3 +131,6 @@ public class RocketController : MonoBehaviour
         GUI.Label(new Rect(20, 60, 200, 20), "Health: " + playerHealth);
     }
 }
+```
+
+Teraz cały kod jest poprawnie zaktualizowany z dodanymi zmiennymi `playerHealth` i `maxHealth`.
