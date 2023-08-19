@@ -132,5 +132,3 @@ public class RocketController : MonoBehaviour
     }
 }
 ```
-
-Teraz cały kod jest poprawnie zaktualizowany z dodanymi zmiennymi `playerHealth` i `maxHealth`.
